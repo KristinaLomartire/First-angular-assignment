@@ -1,0 +1,24 @@
+<div class="thingsToPack">
+<h2 class="plist">Packlista</h2>
+
+<p *ngIf="!data">
+  Det finns inget att packa!
+</p>
+
+
+<ul *ngIf="data">
+
+  <li *ngFor="let item of data"
+    (click)="indexOfChoise(item)"
+    [ngClass]="{'sel': isInList(item)}">
+    {{ item.item }}
+    <button (click)= "onRemoveFromListClick(item)">Ta bort</button>
+  </li>
+
+</ul>
+<br>
+<br>
+ <input placeholder = "Lägg till packlistan" [(ngModel)]="newItem" />
+
+ <button (click)="onAddToListClick()">Lägg till</button>
+</div>

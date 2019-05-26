@@ -1,0 +1,44 @@
+/*
+.sel{
+  background-color: #F8B067;
+}
+*/
+.thingsToPack{
+  position: relative;
+  margin: auto;
+  /*border: 1px solid gray;*/
+  /*text-align: center;*/
+  height: 300px;
+  width: 650px;
+  top: 40px;
+}
+.plist{
+  text-align: center;
+}
+button{
+  position: relative;
+  float: right;
+  margin-right: 45px;
+  border: none;
+  color: white;
+  padding: 3px 8px;
+  background-color: #CCC9C5 ;
+  text-align: center;
+  text-decoration: none;
+
+}
+ul{
+  
+  list-style: none;
+}
+li{
+  /*margin-bottom: 5px;*/
+  padding: 4px;
+
+
+}
+input{
+  padding: 3px;
+  margin-left: 40px;
+  border: 2px solid light gray;
+}

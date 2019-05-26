@@ -1,0 +1,25 @@
+
+<div class="destinationInfo">
+<p class="headText">Utforska de nordligaste delarna av vårt land!</p>
+<p>Välj ditt resmål</p>
+
+<ul>
+		<app-destination-info
+			*ngFor="let dest of destinations; let i = index"
+			(click)="indexOfChoise(i)"
+		  [cssClass]="{'sel': chosenIndex === i}"
+      [city]="dest.city"
+			[info]="dest.info"
+			(onSelected)="selectedCity($event)"
+		></app-destination-info>
+
+		 <button (click)="resetInfo()">Dölj info</button>
+
+	</ul>
+	<div *ngIf="!selectedDestination">
+		Välj gärna en destination 🏕️
+	</div>
+	<div *ngIf="selectedDestination">
+		Lite om din destination: <br> {{ selectedDestination.info }}
+	</div>
+</div>

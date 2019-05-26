@@ -1,0 +1,25 @@
+<div class="trafficLight">
+  <div [className]="red"></div>
+  <div [className]="yellow"></div>
+  <div [className]="green"></div>
+</div>
+
+<button (click)="onLightChangingClick()">Nästa ljus</button>
+<!--
+<div class="trafficLight">
+  <div [ngClass]="{
+      'red-class': state,
+      'protector-class': !state
+    }">
+  </div>
+  <div [ngClass]="{
+    'yellow-class': state,
+    'protector:nth-child(2)': !state
+  }">
+  </div>
+  <div [ngClass]="{
+    'green-class': state,
+    'protector:nth-child(3)': !state
+  }"></div>
+</div>
+-->
